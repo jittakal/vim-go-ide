@@ -27,6 +27,8 @@ export PATH=$PATH:$GOROOT/bin
 
 **Install Go**
 ```
+brew install vim --with-luajit
+
 brew install go
 "go get" the basics
 go get golang.org/x/tools/cmd/godoc
@@ -67,8 +69,8 @@ Remember that your system's Vim config files remain untouched? During installati
     vim -u ~/.vimrc.go
 
 And btw, nothing prevents you from creation of a handy alias in your `.zshrc`:
-
-    alias vimgo='vim -u ~/.vimrc.go'
+    
+    alias vimgo='/usr/local/Cellar/vim/8.1.0050/vim -u ~/.vimrc.go'
 
 ### 4. Setup necessary go tools (godep, gocode, godoc etc):
 
